@@ -1,3 +1,5 @@
+mod day1;
+
 use std::fs::read_to_string;
 use std::path::PathBuf;
 
@@ -46,8 +48,9 @@ fn main() -> Result<(), Report> {
     debug!("{file:?}: read {count} bytes", file=args.input, count=input.len());
 
     match args.puzzle {
-        _ => panic!("No such puzzle: {day}", day=args.puzzle)
-    }
+        1 => day1::solve(input),
+        _ => panic!("No such puzzle: {day}", day=args.puzzle),
+    }.unwrap();
 
     Ok(())
 }
