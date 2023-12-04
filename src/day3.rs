@@ -28,8 +28,8 @@ impl Number {
         let mut cells = Vec::new();
         while n > 0 {
             cells.push(Cell { row: self.cell.row, col });
-            n = n / 10;
-            col = col + 1;
+            n /= 10;
+            col += 1;
         }
         cells
     }
