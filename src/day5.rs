@@ -95,7 +95,7 @@ impl Day5Map {
                 });
                 debug!(pt, ?range, length);
                 debug!(?new_ranges);
-                pt = pt + length;
+                pt += length;
             }
         }
 
