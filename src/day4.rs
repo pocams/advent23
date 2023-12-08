@@ -74,7 +74,7 @@ pub(crate) fn solve(input: String) -> Result<(), Report> {
 
     let total: i32 = cards.iter().map(|c| c.part1_value()).sum();
 
-    info!(day=1, part=1, answer=total);
+    info!(day=4, part=1, answer=total);
 
     for i in 0..cards.len() {
         for n in 0..cards[i].winning_number_count() as usize {
@@ -83,7 +83,7 @@ pub(crate) fn solve(input: String) -> Result<(), Report> {
     }
 
     let total_cards: i32 = cards.iter().map(|c| c.copies).sum();
-    info!(day=1, part=2, answer=total_cards);
+    info!(day=4, part=2, answer=total_cards);
 
     Ok(())
 }

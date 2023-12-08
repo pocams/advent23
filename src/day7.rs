@@ -148,7 +148,7 @@ pub(crate) fn solve(input: String) -> Result<(), Report> {
         total_score += score;
     }
 
-    info!(day=1, part=1, answer=total_score);
+    info!(day=7, part=1, answer=total_score);
 
     for hand in &mut hands {
         for c in hand.cards.iter_mut() {
@@ -166,7 +166,7 @@ pub(crate) fn solve(input: String) -> Result<(), Report> {
         total_score_part2 += score;
     }
 
-    info!(day=1, part=2, answer=total_score_part2);
+    info!(day=7, part=2, answer=total_score_part2);
 
     Ok(())
 }
