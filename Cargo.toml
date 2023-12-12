@@ -13,3 +13,4 @@ tracing-subscriber = { version = "0.3.18", features = ["std", "env-filter"] }
 nom = "7.1.3"
 regex = "1.10.2"
 fnv = "1.0.7"
+owo-colors = "3"

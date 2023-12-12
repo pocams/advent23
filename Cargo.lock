@@ -25,6 +25,7 @@ dependencies = [
  "color-eyre",
  "fnv",
  "nom",
+ "owo-colors",
  "regex",
  "tracing",
  "tracing-subscriber",

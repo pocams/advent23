@@ -7,6 +7,7 @@ mod day6;
 mod day7;
 mod day8;
 mod day9;
+mod day10;
 mod day11;
 
 use std::fs::read_to_string;
@@ -66,6 +67,7 @@ fn main() -> Result<(), Report> {
         7 => day7::solve(input),
         8 => day8::solve(input),
         9 => day9::solve(input),
+        10 => day10::solve(input),
         11 => day11::solve(input),
         _ => panic!("No such puzzle: {day}", day=args.puzzle),
     }.unwrap();
