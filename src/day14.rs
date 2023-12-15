@@ -4,6 +4,7 @@ use color_eyre::Report;
 use tracing::{debug, info};
 
 const ROUND_ROCK: u8 = b'O';
+#[allow(dead_code)]
 const SQUARE_ROCK: u8 = b'#';
 const GROUND: u8 = b'.';
 
@@ -113,7 +114,7 @@ pub(crate) fn solve(input: String) -> Result<(), Report> {
     for iter in 1..100000 {
         cycle(&mut grid);
         let mut state: Vec<u8> = Vec::with_capacity(grid.len() * grid[0].len());
-        for row in grid.iter() { state.extend_from_slice(&row) };
+        for row in grid.iter() { state.extend_from_slice(row) };
         let seen = seen_grids.get(&state);
         if let Some(s) = seen {
             let cycle = iter - s;
